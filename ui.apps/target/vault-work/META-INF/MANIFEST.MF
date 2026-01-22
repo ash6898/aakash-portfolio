@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.4.0
+Build-Jdk-Spec: 17
+Implementation-Title: Aakash Portfolio Website - UI Apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: mixed
+Content-Package-Id: com.aakash.portfolio:ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: This is an empty JCR Package where the JCR 
+ Content
+         can be deployed with.
+Content-Package-Roots: /apps/aakash-portfolio,/content/aakash-portfolio
+

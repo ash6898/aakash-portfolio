@@ -1,0 +1,21 @@
+<header class="site-header" data-sly-use.header="com.aakash.portfolio.core.models.HeaderModel">
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="${header.homePagePath}">
+                <span>${header.siteName}</span>
+            </a>
+        </div>
+        
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li data-sly-list.navItem="${header.navigationItems}">
+                    <a href="${navItem.path}" class="${navItem.active ? 'active' : ''}">${navItem.title}</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="header-cta" data-sly-test="${header.ctaText}">
+            <a href="${header.ctaLink}" class="btn-primary">${header.ctaText}</a>
+        </div>
+    </div>
+</header>

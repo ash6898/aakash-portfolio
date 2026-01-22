@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.4.0
+Build-Jdk-Spec: 17
+Implementation-Title: Aakash Portfolio Website - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.aakash.portfolio:portfolio-sling-all:1.0.0-SNAPS
+ HOT
+Content-Package-Description: com.aakash.portfolio.core - Aakash Portfoli
+ o Website: All-in-one deployment content package
+Content-Package-Roots: /apps/aakash-portfolio-all/install/core-1.0.0-SNA
+ PSHOT.jar,/etc/packages/com.aakash.portfolio/ui.apps-1.0.0-SNAPSHOT.zip
+

@@ -1,0 +1,7 @@
+{
+  "content-packages:ARTIFACTS|required": [
+    {
+        "id":"com.aakash.portfolio/all/1.0.0-SNAPSHOT/zip"
+    }
+  ]
+}

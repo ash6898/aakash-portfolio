@@ -1,0 +1,8 @@
+{
+  "id":"com.aakash.portfolio:launcher:slingosgifeature:launcher:1.0.0-SNAPSHOT",
+  "title":"Aakash Portfolio Website - Launcher",
+  "description":"This is a Module which contains a sample feature model build, built on\n        top of the Sling Starter and adding this project's artifacts.",
+  "content-packages:ARTIFACTS|true":[
+    "com.aakash.portfolio:all:zip:1.0.0-SNAPSHOT"
+  ]
+}

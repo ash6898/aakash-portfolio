@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Aakash Portfolio Website - UI Apps</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2026-01-22T23:28:28.448Z</entry>
+<entry key="groupId">com.aakash.portfolio</entry>
+<entry key="name">ui.apps</entry>
+<entry key="description">This is an empty JCR Package where the JCR Content
+        can be deployed with.</entry>
+<entry key="artifactId">ui.apps</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">mixed</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.aakash.portfolio</entry>
+</properties>

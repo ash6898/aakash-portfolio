@@ -27,12 +27,12 @@
         Also any sub package of this module needs to exclude /apps/aakash-portfolio/install
         folder otherwise they wipe all installed bundles.
     -->
-    <filter root="/content/aakash-portfolio"/>
+    <filter root="/content/aakash-portfolio" mode="replace"/>
     <!--
         Need to exclude the Install folder otherwise the Bundle will be undeployed
         as it is in the '/apps/aakash-portfolio/install' folder (see the 'all'
         package).
     -->
-    <filter root="/apps/aakash-portfolio"/>
+    <filter root="/apps/aakash-portfolio" mode="replace"/>
 
 </workspaceFilter>

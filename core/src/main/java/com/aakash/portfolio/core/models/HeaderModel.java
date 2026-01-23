@@ -38,10 +38,9 @@ public class HeaderModel {
         // Initialize navigation items
         navigationItems = new ArrayList<>();
         // You can populate this from JCR or hardcode for now
-        navigationItems.add(new NavigationItem("Home", "/content/aakash-portfolio/home", true));
-        navigationItems.add(new NavigationItem("About", "/content/aakash-portfolio/about", false));
-        navigationItems.add(new NavigationItem("Projects", "/content/aakash-portfolio/projects", false));
-        navigationItems.add(new NavigationItem("Contact", "/content/aakash-portfolio/contact", false));
+        navigationItems.add(new NavigationItem("About", "/content/aakash-portfolio/about.html", false));
+        navigationItems.add(new NavigationItem("Projects", "/content/aakash-portfolio/projects.html", false));
+        navigationItems.add(new NavigationItem("Contact", "/content/aakash-portfolio/contact.html", false));
     }
 
     // Getters
@@ -54,7 +53,7 @@ public class HeaderModel {
     }
 
     public String getHomePagePath() {
-        return homePagePath != null ? homePagePath : "/content/aakash-portfolio/home";
+        return homePagePath != null ? homePagePath : "/content/aakash-portfolio/home.html";
     }
 
     public String getCtaText() {

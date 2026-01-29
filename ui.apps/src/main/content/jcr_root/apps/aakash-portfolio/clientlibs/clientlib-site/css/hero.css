@@ -1,0 +1,65 @@
+.hero-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #F9FAFF;
+    padding: 5rem 1rem 2rem 1rem;
+    text-align: left;
+    min-height: 500px;
+    position: relative;        /* Needed for absolute child positioning */
+}
+
+.hero-banner-content {
+    width: 50%;
+}
+
+.hero-banner-content h2 {
+    font-size: 1.25rem;
+    color: #FDC435;
+}
+
+.hero-banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #25282B;
+    line-height: 1.2;
+}
+
+.hero-banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #828282;
+}
+
+.hero-banner-content button {
+    padding: 0.8em 1.5em;
+    margin: 0 0.5em;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-banner-image {
+    position: absolute;
+    top: 0;                /* Negative value pulls image UP into header area */
+    right: 0;
+    width: 50%;
+    height: calc(100% + 4rem); /* Extend height to compensate for negative top */
+    background-image: url('/content/aakash-portfolio/assets/images/hero-banner-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    z-index: 5;                /* Below header (z-index: 10) but above other content */
+}
+
+#projects_button {
+    background-color: #FDC435;
+    color: #25282B;
+    border: 2px solid #FDC435;
+}
+
+#linkedin_button {
+    background-color: #F9FAFF;
+    color: #25282B;
+    border: 2px solid #25282B;
+}   

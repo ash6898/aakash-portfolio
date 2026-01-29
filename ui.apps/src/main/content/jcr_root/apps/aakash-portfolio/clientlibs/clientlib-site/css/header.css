@@ -1,7 +1,12 @@
 .site-header {
     font-family: comfortaa, sans-serif;
-    background-color: #F9FAFF;
-    padding: 1rem 2rem;
+    background-color: transparent;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .header-nav {
@@ -10,6 +15,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .header-logo {
@@ -18,7 +24,7 @@
     text-decoration: none;
 }
 
-.nav-list {
+.header-nav-list {
     /* background-color: #FDC435; */
     display: flex;
     list-style: none;
@@ -27,13 +33,13 @@
     padding: 0;
 }
 
-.nav-list a {
+.header-nav-list a {
     color: #25282B;
     font-size: 1.125rem;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.nav-list a:hover {
+.header-nav-list a:hover {
     color: #FDC435;
 }

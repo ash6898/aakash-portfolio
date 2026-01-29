@@ -33,10 +33,24 @@
         <footer
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aakash-portfolio/components/footer"
-            linkedinPath="https://linkedin.com/in/yourprofile"
-            githubPath="https://github.com/yourprofile"
-            emailAddress="your@email.com"
-            footerText="© 2024 Aakash Portfolio"/>
-            
+            footerText="© 2024 Aakash Portfolio">
+            <navItems jcr:primaryType="nt:unstructured">
+                <item1
+                    jcr:primaryType="nt:unstructured"
+                    label="LinkedIn"
+                    path="https://www.linkedin.com/in/aakashbaskaran/"
+                    iconPath="/content/aakash-portfolio/assets/icons/linkedin.svg"/>
+                <item2
+                    jcr:primaryType="nt:unstructured"
+                    label="Github"
+                    path="https://github.com/ash6898/"
+                    iconPath="/content/aakash-portfolio/assets/icons/github.svg"/>
+                <item3
+                    jcr:primaryType="nt:unstructured"
+                    label="Email"
+                    path="mailto:aakash.baskaran.1305@gmail.com"
+                    iconPath="/content/aakash-portfolio/assets/icons/email.svg"/>
+            </navItems>
+        </footer>
     </jcr:content>
 </jcr:root>

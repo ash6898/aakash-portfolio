@@ -1,11 +1,11 @@
-<div class="hero-banner-container">
-  <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/hero.css"/>        
+<div class="hero-banner-container" data-sly-use.heroBanner="com.aakash.portfolio.core.models.HeroBannerModel">
+  <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/hero.css"/>
   <div class="hero-banner-content">
-    <h2>AEM Developer</h2>
-    <h1>Hello,  my name <br/> is Aakash Baskaran</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at qui eos culpa, quibusdam consequuntur sunt error explicabo voluptate laboriosam.</p>
-    <button id="projects_button">Projects</button>
-    <button id="linkedin_button">LinkedIn</button>
+    <h2>${heroBanner.jobTitle}</h2>
+    <h1>${heroBanner.name @ context='html'}</h1>
+    <p>${heroBanner.description}</p>
+    <a href="${heroBanner.button1Path}" class="btn" id="button1">${heroBanner.button1Text}</a>
+    <a href="${heroBanner.button2Path}" class="btn" id="button2" target="_blank" rel="noopener noreferrer">${heroBanner.button2Text}</a>
   </div>
   <div class="hero-banner-image" role="img" aria-label="Hero Image"></div>
 </div>

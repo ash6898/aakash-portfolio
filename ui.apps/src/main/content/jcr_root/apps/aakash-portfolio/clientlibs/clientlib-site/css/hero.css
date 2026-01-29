@@ -31,12 +31,14 @@
     color: #828282;
 }
 
-.hero-banner-content button {
+.hero-banner-content .btn {
+    display: inline-block;
     padding: 0.8em 1.5em;
     margin: 0 0.5em;
     font-size: 1.125rem;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .hero-banner-image {
@@ -52,13 +54,13 @@
     z-index: 5;                /* Below header (z-index: 10) but above other content */
 }
 
-#projects_button {
+#button1 {
     background-color: #FDC435;
     color: #25282B;
     border: 2px solid #FDC435;
 }
 
-#linkedin_button {
+#button2 {
     background-color: #F9FAFF;
     color: #25282B;
     border: 2px solid #25282B;

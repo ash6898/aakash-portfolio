@@ -1,2 +1,3 @@
+com\aakash\portfolio\core\models\HeaderModel$NavItem.class
 com\aakash\portfolio\core\models\HeaderModel.class
 com\aakash\portfolio\core\models\FooterModel.class

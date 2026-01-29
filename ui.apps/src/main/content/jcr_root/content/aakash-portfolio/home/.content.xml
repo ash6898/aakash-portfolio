@@ -13,10 +13,22 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aakash-portfolio/components/header"
             siteName="Aakash Portfolio"
-            homePagePath="/content/aakash-portfolio/home.html"
-            aboutPagePath="/content/aakash-portfolio/about.html"
-            projectsPagePath="/content/aakash-portfolio/projects.html"
-            contactPagePath="/content/aakash-portfolio/contact.html"/>
+            homePagePath="/content/aakash-portfolio/home.html">
+            <navItems jcr:primaryType="nt:unstructured">
+                <item1
+                    jcr:primaryType="nt:unstructured"
+                    label="About"
+                    path="/content/aakash-portfolio/about.html"/>
+                <item2
+                    jcr:primaryType="nt:unstructured"
+                    label="Projects"
+                    path="/content/aakash-portfolio/projects.html"/>
+                <item3
+                    jcr:primaryType="nt:unstructured"
+                    label="Contact"
+                    path="/content/aakash-portfolio/contact.html"/>
+            </navItems>
+        </header>
             
         <footer
             jcr:primaryType="nt:unstructured"

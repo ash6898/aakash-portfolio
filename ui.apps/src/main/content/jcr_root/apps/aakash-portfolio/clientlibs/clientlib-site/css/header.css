@@ -25,12 +25,20 @@
 }
 
 .header-nav-list {
-    /* background-color: #FDC435; */
     display: flex;
     list-style: none;
     gap: 2rem;
     margin: 0;
     padding: 0;
+}
+
+.header-nav-list > li {
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.header-nav-list > li:last-child {
+    margin-right: 0;
 }
 
 .header-nav-list a {

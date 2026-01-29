@@ -1,13 +1,13 @@
 <header class="site-header" data-sly-use.header="com.aakash.portfolio.core.models.HeaderModel">
-    <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/header.css"/>        
+    <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/header.css" />
     <nav class="header-nav">
         <a href="${header.homePagePath}" class="header-logo">
             <span>${header.siteName}</span>
         </a>
         <ul class="header-nav-list">
-            <li><a href="${header.aboutPagePath}">About</a></li>
-            <li><a href="${header.projectsPagePath}">Projects</a></li>
-            <li><a href="${header.contactPagePath}">Contact</a></li>
+            <sly data-sly-list="${header.navItems}">
+                <li><a href="${item.path}">${item.label}</a></li>
+            </sly>
         </ul>
     </nav>
 </header>

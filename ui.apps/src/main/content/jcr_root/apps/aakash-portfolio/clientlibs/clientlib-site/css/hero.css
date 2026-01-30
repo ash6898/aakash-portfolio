@@ -43,15 +43,14 @@
 
 .hero-banner-image {
     position: absolute;
-    top: 0;                /* Negative value pulls image UP into header area */
+    top: 0;
     right: 0;
     width: 50%;
-    height: calc(100% + 4rem); /* Extend height to compensate for negative top */
-    background-image: url('/content/aakash-portfolio/assets/images/hero-banner-image.png');
+    height: calc(100% + 4rem);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
-    z-index: 5;                /* Below header (z-index: 10) but above other content */
+    z-index: 5;
 }
 
 #button1 {

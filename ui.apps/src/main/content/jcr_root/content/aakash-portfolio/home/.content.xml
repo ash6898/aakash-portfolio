@@ -39,7 +39,36 @@
             button1Text="Projects"
             button2Text="LinkedIn"
             button1Path="/content/aakash-portfolio/projects.html"
-            button2Path="https://www.linkedin.com/in/aakashbaskaran/"/>
+            button2Path="https://www.linkedin.com/in/aakashbaskaran/"
+            imagePath="/content/aakash-portfolio/assets/images/hero-banner-image.png"/>
+
+        <project1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/project-card"
+            title="Project One"
+            description="Description for Project One."
+            buttonText="View Project"
+            buttonPath="/content/aakash-portfolio/project1.html"
+            imagePath="/content/aakash-portfolio/assets/images/project1_img.png"/>
+
+        <project2
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/project-card"
+            title="Project Two"
+            description="Description for Project Two."
+            buttonText="View Project"
+            buttonPath=""
+            imagePath="/content/aakash-portfolio/assets/images/project2_img.png"/>
+
+        <project3
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/project-card"
+            title="Project Three"
+            description="Description for Project Three."
+            buttonText="View Project"
+            buttonPath=""
+            imagePath="/content/aakash-portfolio/assets/images/project3_img.png"/>
+
 
         <footer
             jcr:primaryType="nt:unstructured"

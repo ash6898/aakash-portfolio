@@ -9,62 +9,41 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = { Resource.class,
         SlingHttpServletRequest.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class HeroBannerModel {
+public class ProjectCardModel {
 
     @SlingObject
     private Resource resource;
 
     @ValueMapValue
-    private String jobTitle;
-
-    @ValueMapValue
-    private String name;
+    private String title;
 
     @ValueMapValue
     private String description;
 
     @ValueMapValue
-    private String button1Text;
+    private String buttonText;
 
     @ValueMapValue
-    private String button2Text;
-
-    @ValueMapValue
-    private String button1Path;
-
-    @ValueMapValue
-    private String button2Path;
+    private String buttonPath;
 
     @ValueMapValue
     private String imagePath;
 
     // Getters
-    public String getJobTitle() {
-        return jobTitle;
-    }
-
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public String getButton1Text() {
-        return button1Text;
+    public String getButtonText() {
+        return buttonText;
     }
 
-    public String getButton2Text() {
-        return button2Text;
-    }
-
-    public String getButton1Path() {
-        return button1Path;
-    }
-
-    public String getButton2Path() {
-        return button2Path;
+    public String getButtonPath() {
+        return buttonPath;
     }
 
     public String getImagePath() {

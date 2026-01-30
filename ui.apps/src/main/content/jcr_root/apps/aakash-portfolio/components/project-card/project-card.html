@@ -1,0 +1,9 @@
+<div class="projects-card-container" data-sly-use.projectCard="com.aakash.portfolio.core.models.ProjectCardModel">
+  <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/projectCard.css"/>
+  <div class="project-card-content">
+    <h2>${projectCard.title}</h2>
+    <p>${projectCard.description}</p>
+    <a href="${projectCard.buttonPath}" class="btn" id="project-card-button">${projectCard.buttonText}</a>
+  </div>
+  <div class="project-card-image" style="background-image: url(${projectCard.imagePath @ context='unsafe'})" role="img" aria-label="Project Card Image"></div>
+</div>

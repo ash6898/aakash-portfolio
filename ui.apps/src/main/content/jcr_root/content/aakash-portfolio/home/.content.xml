@@ -42,7 +42,22 @@
             button2Path="https://www.linkedin.com/in/aakashbaskaran/"
             imagePath="/content/aakash-portfolio/assets/images/hero-banner-image.png"/>
 
-        <section-title
+                <about-title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/section-title"
+            title="About Me"/>
+
+        <about-banner
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/hero-banner"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at qui eos culpa, quibus
+            dam consequuntur sunt error explicabo voluptate laboriosam."
+            styleClass="about-section"
+            button1Text="Resume"
+            button1Path="/content/aakash-portfolio/resume.html"
+            imagePath="/content/aakash-portfolio/assets/images/about_img.png"/>
+
+        <projects-title
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aakash-portfolio/components/section-title"
             title="Projects"/>
@@ -73,7 +88,6 @@
             buttonText="View Project"
             buttonPath=""
             imagePath="/content/aakash-portfolio/assets/images/project3_img.png"/>
-
 
         <footer
             jcr:primaryType="nt:unstructured"

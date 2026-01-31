@@ -38,6 +38,9 @@ public class HeroBannerModel {
     @ValueMapValue
     private String imagePath;
 
+    @ValueMapValue
+    private String styleClass;
+
     // Getters
     public String getJobTitle() {
         return jobTitle;
@@ -69,5 +72,9 @@ public class HeroBannerModel {
 
     public String getImagePath() {
         return imagePath;
+    }
+
+    public String getStyleClass() {
+        return styleClass;
     }
 }

@@ -1,12 +1,23 @@
 .hero-banner-container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 4rem;
     display: flex;
     background-color: #F9FAFF;
     padding: 5rem 1rem 2rem 1rem;
     text-align: left;
     min-height: 500px;
     position: relative;        /* Needed for absolute child positioning */
+}
+
+.about-section {
+    flex-direction: row-reverse;
+}
+
+.about-section .hero-banner-image {
+    right: auto;
+    left: 0;
+    background-position: left top;
 }
 
 .hero-banner-content {

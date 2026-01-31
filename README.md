@@ -1,6 +1,14 @@
-﻿# Aakash Portfolio - Apache Sling Project
+# Aakash Portfolio - Apache Sling Project
 
-A portfolio website built using **Apache Sling** framework with **HTL (Sightly)** templating and **Sling Models** for backend logic.
+A portfolio website built using **Apache Sling** framework - exploring AEM development concepts through a fully open-source stack.
+
+## Live Portfolio
+
+Visit the static version: **[https://ash6898.github.io/Aakash-Baskaran/](https://ash6898.github.io/Aakash-Baskaran/)**
+
+## About This Project
+
+This project demonstrates how Adobe Experience Manager (AEM) development patterns can be learned using Apache Sling - the open-source foundation that AEM is built upon. By working with Sling directly, developers can understand core concepts like HTL templating, Sling Models, and JCR content management without proprietary licensing.
 
 ## Tech Stack
 
@@ -12,301 +20,30 @@ A portfolio website built using **Apache Sling** framework with **HTL (Sightly)*
 | JCR | Content repository |
 | Maven | Build automation |
 
-## Project Structure
-
-
-
 ## Components
 
-### 1. Header Component
+### Header
 - Site name with link to home
 - Navigation menu with configurable items
 
-### 2. Hero Banner Component
+### Hero Banner
 - Job title, name, and description
 - Two CTA buttons (configurable)
 - Background image
 
-### 3. Section Title Component
+### Section Title
 - Centered heading with underline accent
 - Optional subtitle
 
-### 4. Project Card Component
+### Project Card
 - Alternating layout (image left/right)
 - Project title, description, and CTA button
 - Responsive design
 
-### 5. Footer Component
+### Footer
 - Copyright text
 - Social media links with icons
 
-## Prerequisites
+## Design Credit
 
-- Java 11+
-- Maven 3.6+
-- Apache Sling Starter
-
-## Installation
-
-1. Clone the repository
-2. Build: [INFO] Scanning for projects...
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Build Order:
-[INFO] 
-[INFO] portfolio-sling                                                    [pom]
-[INFO] Aakash Portfolio Website - Core                                 [bundle]
-[INFO] Aakash Portfolio Website - UI Apps                     [content-package]
-[INFO] Aakash Portfolio Website - Launcher                                [jar]
-[INFO] Aakash Portfolio Website - All                         [content-package]
-[INFO] 
-[INFO] ----------------< com.aakash.portfolio:portfolio-sling >----------------
-[INFO] Building portfolio-sling 1.0.0-SNAPSHOT                            [1/5]
-[INFO]   from pom.xml
-[INFO] --------------------------------[ pom ]---------------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ portfolio-sling ---
-[INFO] 
-[INFO] --- enforcer:3.5.0:enforce (enforce-maven) @ portfolio-sling ---
-[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[INFO] 
-[INFO] --- install:3.1.3:install (default-install) @ portfolio-sling ---
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\pom.xml to C:\Users\aakas\.m2\repository\com\aakash\portfolio\portfolio-sling\1.0.0-SNAPSHOT\portfolio-sling-1.0.0-SNAPSHOT.pom
-[INFO] 
-[INFO] ---------------------< com.aakash.portfolio:core >----------------------
-[INFO] Building Aakash Portfolio Website - Core 1.0.0-SNAPSHOT            [2/5]
-[INFO]   from core\pom.xml
-[INFO] -------------------------------[ bundle ]-------------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ core ---
-[INFO] Deleting C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\target
-[INFO] 
-[INFO] --- enforcer:3.5.0:enforce (enforce-maven) @ core ---
-[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ core ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\src\main\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ core ---
-[INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 4 source files with javac [debug target 11] to target\classes
-[WARNING] system modules path not set in conjunction with -source 11
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ core ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core ---
-[INFO] Recompiling the module because of changed dependency.
-[INFO] 
-[INFO] --- surefire:3.5.2:test (default-test) @ core ---
-[INFO] 
-[INFO] --- bundle:5.1.9:bundle (default-bundle) @ core ---
-[INFO] Building bundle: C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\target\core-1.0.0-SNAPSHOT.jar
-[INFO] Writing manifest: C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\target\classes\META-INF\MANIFEST.MF
-[INFO] 
-[INFO] --- install:3.1.3:install (default-install) @ core ---
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\pom.xml to C:\Users\aakas\.m2\repository\com\aakash\portfolio\core\1.0.0-SNAPSHOT\core-1.0.0-SNAPSHOT.pom
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\target\core-1.0.0-SNAPSHOT.jar to C:\Users\aakas\.m2\repository\com\aakash\portfolio\core\1.0.0-SNAPSHOT\core-1.0.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- bundle:5.1.9:install (default-install) @ core ---
-[INFO] Installing com/aakash/portfolio/core/1.0.0-SNAPSHOT/core-1.0.0-SNAPSHOT.jar
-[INFO] Writing OBR metadata
-[INFO] 
-[INFO] --------------------< com.aakash.portfolio:ui.apps >--------------------
-[INFO] Building Aakash Portfolio Website - UI Apps 1.0.0-SNAPSHOT         [3/5]
-[INFO]   from ui.apps\pom.xml
-[INFO] --------------------------[ content-package ]---------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ ui.apps ---
-[INFO] Deleting C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\target
-[INFO] 
-[INFO] --- enforcer:3.5.0:enforce (enforce-maven) @ ui.apps ---
-[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ ui.apps ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\src\main\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ ui.apps ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- filevault-package:1.4.0:generate-metadata (default-generate-metadata) @ ui.apps ---
-[INFO] Using META-INF/vault from C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\src\main\content\META-INF\vault
-[INFO] Loading filter from C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\src\main\content\META-INF\vault\filter.xml
-[INFO] Auto-detected package type: mixed
-[INFO] 
-[INFO] --- filevault-package:1.4.0:validate-files (default-validate-files) @ ui.apps ---
-[INFO] Skip this goal as this is not an incremental build and 'validate-package' is executed later on!
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ ui.apps ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ ui.apps ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- surefire:3.5.2:test (default-test) @ ui.apps ---
-[INFO] No tests to run.
-[INFO] 
-[INFO] --- filevault-package:1.4.0:package (default-package) @ ui.apps ---
-[INFO] Using META-INF/vault from C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\src\main\content\META-INF\vault
-[INFO] Found duplicate file 'META-INF\vault\settings.xml' from sources 'src\main\content\META-INF\vault\settings.xml' and 'target\vault-work\META-INF\vault\settings.xml'.
-[INFO] Packaging content from 'src\main\content\jcr_root'
-[INFO] Building content-package: C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\target\ui.apps-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] --- filevault-package:1.4.0:validate-package (default-validate-package) @ ui.apps ---
-[INFO] Start validating package 'target\ui.apps-1.0.0-SNAPSHOT.zip'...
-[WARNING] Using default nodetypes, consider specifying the nodetypes from the repository you use!
-[INFO] Using 12 validators for package of type MIXED: jackrabbit-accesscontrol (org.apache.jackrabbit.vault.validation.spi.impl.AccessControlValidator), jackrabbit-filter (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedFilterValidator), jackrabbit-properties (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedPropertiesValidator), jackrabbit-docviewparser (org.apache.jackrabbit.vault.validation.spi.impl.DocumentViewParserValidator), jackrabbit-dependencies (org.apache.jackrabbit.vault.validation.spi.impl.DependencyValidator), jackrabbit-duplicateuuid (org.apache.jackrabbit.vault.validation.spi.impl.DuplicateUuidValidator), jackrabbit-emptyelements (org.apache.jackrabbit.vault.validation.spi.impl.EmptyElementsValidator), jackrabbit-mergelimitations (org.apache.jackrabbit.vault.validation.spi.impl.MergeLimitationsValidator), jackrabbit-oakindex (org.apache.jackrabbit.vault.validation.spi.impl.OakIndexDefinitionValidator), jackrabbit-overlappingfilter (org.apache.jackrabbit.vault.validation.spi.impl.OverlappingFilterValidator), jackrabbit-packagetype (org.apache.jackrabbit.vault.validation.spi.impl.PackageTypeValidator), jackrabbit-nodetypes (org.apache.jackrabbit.vault.validation.spi.impl.nodetype.NodeTypeValidator)
-[WARNING] ValidationViolation: Package of type 'MIXED' is legacy. Use one of the other types instead! @ META-INF\vault\properties.xml, validator: jackrabbit-packagetype
-[WARNING] ValidationViolation: Invalid primary type 'sling:Folder': sling: is not a registered namespace prefix. Skip validation of nodes with that type/name @ jcr_root\apps\aakash-portfolio\.content.xml, line 24, column 3, validator: jackrabbit-nodetypes, JCR node path: /apps/aakash-portfolio
-[WARNING] ValidationViolation: Invalid primary type 'sling:OrderedFolder': sling: is not a registered namespace prefix. Skip validation of nodes with that type/name @ jcr_root\content\aakash-portfolio\home\.content.xml, line 6, column 59, validator: jackrabbit-nodetypes, JCR node path: /content/aakash-portfolio/home
-[INFO] 
-[INFO] --- install:3.1.3:install (default-install) @ ui.apps ---
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\pom.xml to C:\Users\aakas\.m2\repository\com\aakash\portfolio\ui.apps\1.0.0-SNAPSHOT\ui.apps-1.0.0-SNAPSHOT.pom
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\target\ui.apps-1.0.0-SNAPSHOT.zip to C:\Users\aakas\.m2\repository\com\aakash\portfolio\ui.apps\1.0.0-SNAPSHOT\ui.apps-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] -------------------< com.aakash.portfolio:launcher >--------------------
-[INFO] Building Aakash Portfolio Website - Launcher 1.0.0-SNAPSHOT        [4/5]
-[INFO]   from launcher\pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ launcher ---
-[INFO] Deleting C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target
-[INFO] 
-[INFO] --- enforcer:3.5.0:enforce (enforce-maven) @ launcher ---
-[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ launcher ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\src\main\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ launcher ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ launcher ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ launcher ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- surefire:3.5.2:test (default-test) @ launcher ---
-[INFO] No tests to run.
-[INFO] 
-[INFO] --- slingfeature:1.9.0:aggregate-features (prepare-features) @ launcher ---
-[INFO] 
-[INFO] --- slingfeature:1.9.0:analyse-features (prepare-features) @ launcher ---
-[INFO] Starting analyzing feature 'com.aakash.portfolio:launcher:slingosgifeature:app:1.0.0-SNAPSHOT'...
-[INFO] - Scanned feature in 2188ms
-[INFO] - Executing APIs jar properties check [apis-jar]...
-[INFO] - Executed APIs jar properties check [apis-jar] in 1ms
-[INFO] - Executing Bundle Import/Export Check [bundle-packages]...
-[INFO] - Executed Bundle Import/Export Check [bundle-packages] in 132ms
-[INFO] - Executing Repoinit Check [repoinit]...
-[INFO] - Executed Repoinit Check [repoinit] in 16ms
-[INFO] - Executing Requirements Capabilities check [requirements-capabilities]...
-[INFO] - Executed Requirements Capabilities check [requirements-capabilities] in 55ms
-[INFO] Finished analyzing feature 'com.aakash.portfolio:launcher:slingosgifeature:app:1.0.0-SNAPSHOT' in 2393ms : 5 warnings, 0 errors.
-[WARNING] Analyser detected warnings on feature 'com.aakash.portfolio:launcher:slingosgifeature:app:1.0.0-SNAPSHOT'.
-[WARNING] [requirements-capabilities] org.apache.felix:org.apache.felix.http.jetty:4.1.14: Artifact org.apache.felix:org.apache.felix.http.jetty:4.1.14 requires [org.apache.felix.http.jetty/4.1.14] osgi.extender; filter:="(osgi.extender=osgi.serviceloader.processor)"; resolution:=optional in start level 5 but while the requirement is optional no artifact is providing a matching capability in this start level.
-[WARNING] [requirements-capabilities] org.apache.felix:org.apache.felix.http.jetty:4.1.14: Artifact org.apache.felix:org.apache.felix.http.jetty:4.1.14 requires [org.apache.felix.http.jetty/4.1.14] osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.io.ssl.ALPNProcessor$Server)"; resolution:=optional; cardinality:=multiple in start level 5 but while the requirement is optional no artifact is providing a matching capability in this start level.
-[WARNING] [requirements-capabilities] org.apache.felix:org.apache.felix.http.jetty:4.1.14: Artifact org.apache.felix:org.apache.felix.http.jetty:4.1.14 requires [org.apache.felix.http.jetty/4.1.14] osgi.extender; filter:="(osgi.extender=osgi.serviceloader.registrar)"; resolution:=optional in start level 5 but while the requirement is optional no artifact is providing a matching capability in this start level.
-[WARNING] [requirements-capabilities] org.codehaus.groovy:groovy-test-junit5:3.0.9: Artifact org.codehaus.groovy:groovy-test-junit5:3.0.9 requires [groovy-test-junit5/3.0.9] osgi.serviceloader; filter:="(osgi.serviceloader=org.apache.groovy.plugin.GroovyRunner)"; cardinality:=multiple in start level 20 but there is more than one matching capability in this start level: [BundleInfo [symbolicName=groovy-test-junit5, version=3.0.9], BundleInfo [symbolicName=groovy-testng, version=3.0.9]]
-[WARNING] [requirements-capabilities] org.codehaus.groovy:groovy-testng:3.0.9: Artifact org.codehaus.groovy:groovy-testng:3.0.9 requires [groovy-testng/3.0.9] osgi.serviceloader; filter:="(osgi.serviceloader=org.apache.groovy.plugin.GroovyRunner)"; cardinality:=multiple in start level 20 but there is more than one matching capability in this start level: [BundleInfo [symbolicName=groovy-test-junit5, version=3.0.9], BundleInfo [symbolicName=groovy-testng, version=3.0.9]]
-[INFO] 
-[INFO] --- slingfeature:1.9.0:attach-features (prepare-features) @ launcher ---
-[INFO] 
-[INFO] --- jar:3.4.2:jar (default-jar) @ launcher ---
-[WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target\launcher-1.0.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- dependency:3.8.1:unpack (prepare-feature-launcher) @ launcher ---
-[INFO] Configured Artifact: org.apache.sling:org.apache.sling.feature.launcher:1.3.2:tar.gz
-[INFO] Expanding: C:\Users\aakas\.m2\repository\org\apache\sling\org.apache.sling.feature.launcher\1.3.2\org.apache.sling.feature.launcher-1.3.2.tar.gz into C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target\dependency
-[INFO] 
-[INFO] --- install:3.1.3:install (default-install) @ launcher ---
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\pom.xml to C:\Users\aakas\.m2\repository\com\aakash\portfolio\launcher\1.0.0-SNAPSHOT\launcher-1.0.0-SNAPSHOT.pom
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target\launcher-1.0.0-SNAPSHOT.jar to C:\Users\aakas\.m2\repository\com\aakash\portfolio\launcher\1.0.0-SNAPSHOT\launcher-1.0.0-SNAPSHOT.jar
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target\slingfeature-tmp\feature-app.json to C:\Users\aakas\.m2\repository\com\aakash\portfolio\launcher\1.0.0-SNAPSHOT\launcher-1.0.0-SNAPSHOT-app.slingosgifeature
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\launcher\target\slingfeature-tmp\feature-launcher.json to C:\Users\aakas\.m2\repository\com\aakash\portfolio\launcher\1.0.0-SNAPSHOT\launcher-1.0.0-SNAPSHOT-launcher.slingosgifeature
-[INFO] 
-[INFO] ----------------------< com.aakash.portfolio:all >----------------------
-[INFO] Building Aakash Portfolio Website - All 1.0.0-SNAPSHOT             [5/5]
-[INFO]   from all\pom.xml
-[INFO] --------------------------[ content-package ]---------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ all ---
-[INFO] Deleting C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\target
-[INFO] 
-[INFO] --- enforcer:3.5.0:enforce (enforce-maven) @ all ---
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ all ---
-[INFO] skip non existing resourceDirectory C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\src\main\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ all ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- filevault-package:1.4.0:generate-metadata (default-generate-metadata) @ all ---
-[INFO] Embedding --- Embedded: groupId=com.aakash.portfolio,artifactId=core,type=,classifier=,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.aakash.portfolio:core:jar:1.0.0-SNAPSHOT (from C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\core\target\core-1.0.0-SNAPSHOT.jar) -> jcr_root/apps/aakash-portfolio-all/install/core-1.0.0-SNAPSHOT.jar
-[INFO] Embedding subpackage --- Sub Packages: groupId=com.aakash.portfolio,artifactId=ui.apps,type=,classifier=,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.aakash.portfolio:ui.apps:content-package:1.0.0-SNAPSHOT (from C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\ui.apps\target\ui.apps-1.0.0-SNAPSHOT.zip) -> jcr_root/etc/packages/com.aakash.portfolio/ui.apps-1.0.0-SNAPSHOT.zip
-[INFO] Generating filter.xml from plugin configuration
-[INFO] 
-[INFO] --- filevault-package:1.4.0:validate-files (default-validate-files) @ all ---
-[INFO] Skip this goal as this is not an incremental build and 'validate-package' is executed later on!
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ all ---
-[INFO] Not copying test resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ all ---
-[INFO] Not compiling test sources
-[INFO] 
-[INFO] --- surefire:3.5.2:test (default-test) @ all ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- filevault-package:1.4.0:package (default-package) @ all ---
-[INFO] Building content-package: C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\target\all-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] --- filevault-package:1.4.0:validate-package (default-validate-package) @ all ---
-[INFO] Start validating package 'target\all-1.0.0-SNAPSHOT.zip'...
-[WARNING] Using default nodetypes, consider specifying the nodetypes from the repository you use!
-[INFO] Using 12 validators for package of type CONTAINER: jackrabbit-accesscontrol (org.apache.jackrabbit.vault.validation.spi.impl.AccessControlValidator), jackrabbit-filter (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedFilterValidator), jackrabbit-properties (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedPropertiesValidator), jackrabbit-docviewparser (org.apache.jackrabbit.vault.validation.spi.impl.DocumentViewParserValidator), jackrabbit-dependencies (org.apache.jackrabbit.vault.validation.spi.impl.DependencyValidator), jackrabbit-duplicateuuid (org.apache.jackrabbit.vault.validation.spi.impl.DuplicateUuidValidator), jackrabbit-emptyelements (org.apache.jackrabbit.vault.validation.spi.impl.EmptyElementsValidator), jackrabbit-mergelimitations (org.apache.jackrabbit.vault.validation.spi.impl.MergeLimitationsValidator), jackrabbit-oakindex (org.apache.jackrabbit.vault.validation.spi.impl.OakIndexDefinitionValidator), jackrabbit-overlappingfilter (org.apache.jackrabbit.vault.validation.spi.impl.OverlappingFilterValidator), jackrabbit-packagetype (org.apache.jackrabbit.vault.validation.spi.impl.PackageTypeValidator), jackrabbit-nodetypes (org.apache.jackrabbit.vault.validation.spi.impl.nodetype.NodeTypeValidator)
-[WARNING] ValidationViolation: Filter root's ancestor '/apps/aakash-portfolio-all/install' is not covered by any of the specified dependencies nor a valid root. @ META-INF\vault\filter.xml, validator: jackrabbit-filter
-[WARNING] ValidationViolation: Filter root's ancestor '/etc/packages/com.aakash.portfolio' is not covered by any of the specified dependencies nor a valid root. @ META-INF\vault\filter.xml, validator: jackrabbit-filter
-[INFO] Start validating sub package 'C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\target\all-1.0.0-SNAPSHOT.zip\jcr_root\etc\packages\com.aakash.portfolio\ui.apps-1.0.0-SNAPSHOT.zip'...
-[INFO] Using 12 validators for package of type MIXED: jackrabbit-accesscontrol (org.apache.jackrabbit.vault.validation.spi.impl.AccessControlValidator), jackrabbit-filter (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedFilterValidator), jackrabbit-properties (org.apache.jackrabbit.vault.validation.spi.impl.AdvancedPropertiesValidator), jackrabbit-docviewparser (org.apache.jackrabbit.vault.validation.spi.impl.DocumentViewParserValidator), jackrabbit-dependencies (org.apache.jackrabbit.vault.validation.spi.impl.DependencyValidator), jackrabbit-duplicateuuid (org.apache.jackrabbit.vault.validation.spi.impl.DuplicateUuidValidator), jackrabbit-emptyelements (org.apache.jackrabbit.vault.validation.spi.impl.EmptyElementsValidator), jackrabbit-mergelimitations (org.apache.jackrabbit.vault.validation.spi.impl.MergeLimitationsValidator), jackrabbit-oakindex (org.apache.jackrabbit.vault.validation.spi.impl.OakIndexDefinitionValidator), jackrabbit-overlappingfilter (org.apache.jackrabbit.vault.validation.spi.impl.OverlappingFilterValidator), jackrabbit-packagetype (org.apache.jackrabbit.vault.validation.spi.impl.PackageTypeValidator), jackrabbit-nodetypes (org.apache.jackrabbit.vault.validation.spi.impl.nodetype.NodeTypeValidator)
-[WARNING] ValidationViolation: Package of type 'CONTAINER' must only contain sub packages of type 'APPLICATION, CONTENT, CONTAINER' but found subpackage of type 'MIXED'! @ META-INF\vault\properties.xml, validator: jackrabbit-packagetype
-[WARNING] ValidationViolation: Package of type 'MIXED' is legacy. Use one of the other types instead! @ META-INF\vault\properties.xml, validator: jackrabbit-packagetype
-[INFO] End validating sub package.
-[INFO] 
-[INFO] --- install:3.1.3:install (default-install) @ all ---
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\pom.xml to C:\Users\aakas\.m2\repository\com\aakash\portfolio\all\1.0.0-SNAPSHOT\all-1.0.0-SNAPSHOT.pom
-[INFO] Installing C:\Users\aakas\OneDrive\Desktop\aakash_portfolio\portfolio-sling\all\target\all-1.0.0-SNAPSHOT.zip to C:\Users\aakas\.m2\repository\com\aakash\portfolio\all\1.0.0-SNAPSHOT\all-1.0.0-SNAPSHOT.zip
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary for portfolio-sling 1.0.0-SNAPSHOT:
-[INFO] 
-[INFO] portfolio-sling .................................... SUCCESS [  0.401 s]
-[INFO] Aakash Portfolio Website - Core .................... SUCCESS [  2.347 s]
-[INFO] Aakash Portfolio Website - UI Apps ................. SUCCESS [  1.112 s]
-[INFO] Aakash Portfolio Website - Launcher ................ SUCCESS [  4.102 s]
-[INFO] Aakash Portfolio Website - All ..................... SUCCESS [  0.171 s]
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  12.587 s
-[INFO] Finished at: 2026-01-30T21:06:00-05:00
-[INFO] ------------------------------------------------------------------------
-3. Start: 
-4. Access: http://localhost:8080/content/aakash-portfolio/home.html
-
-## Author
-
-**Aakash Baskaran**
-- LinkedIn: https://www.linkedin.com/in/aakashbaskaran/
-- GitHub: https://github.com/ash6898/
-- Email: aakash.baskaran.1305@gmail.com
-
-## License
-
-MIT License
+Design template from Figma Community: [Personal Portfolio Website Template](https://www.figma.com/community/file/946944225031473055/personal-portfolio-website-template)

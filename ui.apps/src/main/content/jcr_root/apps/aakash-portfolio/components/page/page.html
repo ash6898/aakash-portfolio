@@ -14,11 +14,12 @@
       <main>
         <sly data-sly-resource="${'jcr:content/hero-banner' @ resourceType='aakash-portfolio/components/hero-banner'}"/>
 
-        <!-- <section class="projects-section"> -->
+        <section class="projects-section">
+          <sly data-sly-resource="${'jcr:content/section-title' @ resourceType='aakash-portfolio/components/section-title'}"/>
           <sly data-sly-resource="${'jcr:content/project1' @ resourceType='aakash-portfolio/components/project-card'}"/>
           <sly data-sly-resource="${'jcr:content/project2' @ resourceType='aakash-portfolio/components/project-card'}"/>
           <sly data-sly-resource="${'jcr:content/project3' @ resourceType='aakash-portfolio/components/project-card'}"/>
-        <!-- </section> -->
+        </section>
       </main>
 
 

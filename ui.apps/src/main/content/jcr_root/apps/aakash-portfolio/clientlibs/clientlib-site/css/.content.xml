@@ -9,4 +9,8 @@
         jcr:primaryType="nt:file"/>
     <hero.css
         jcr:primaryType="nt:file"/>
+    <project-card.css
+        jcr:primaryType="nt:file"/>
+    <section-title.css
+        jcr:primaryType="nt:file"/>
 </jcr:root>

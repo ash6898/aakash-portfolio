@@ -89,6 +89,16 @@
             buttonPath=""
             imagePath="/content/aakash-portfolio/assets/images/project3_img.png"/>
 
+        <contact-title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/section-title"
+            title="Contact Me"/>
+
+        <contact-form
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aakash-portfolio/components/contact-form"
+        />
+
         <footer
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aakash-portfolio/components/footer"

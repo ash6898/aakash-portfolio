@@ -65,3 +65,22 @@
     background-color: #e5b030;
     border-color: #e5b030;
 }
+
+.contact-form .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem;
+}
+
+.success-message h3 {
+    color: #25282B;
+    margin-bottom: 0.5rem;
+}
+
+.success-message p {
+    color: #52575C;
+}

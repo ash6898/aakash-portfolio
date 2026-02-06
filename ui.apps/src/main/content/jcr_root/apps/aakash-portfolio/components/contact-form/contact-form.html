@@ -1,6 +1,9 @@
 <section class="contact-section">
   <link rel="stylesheet" href="/apps/aakash-portfolio/clientlibs/clientlib-site/css/contact-form.css"/>
-  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+  <form class="contact-form" id="contactForm" action="https://formspree.io/f/mdaloaae" method="POST">
+    <!-- Honeypot - hidden from users, catches bots -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required/>
@@ -15,4 +18,11 @@
     </div>
     <button type="submit" class="btn">Send</button>
   </form>
+
+  <div id="successMessage" class="success-message" style="display:none;">
+    <h3>Thank you!</h3>
+    <p>Your message has been sent. I'll get back to you soon.</p>
+  </div>
+
+  <script src="/apps/aakash-portfolio/clientlibs/clientlib-site/js/contact-form.js"></script>
 </section>

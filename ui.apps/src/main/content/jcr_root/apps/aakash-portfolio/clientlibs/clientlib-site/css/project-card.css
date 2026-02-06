@@ -1,5 +1,6 @@
 .projects-card-container {
     max-width: 65.5rem;
+    padding: 3rem 1rem;
     margin: 0 auto 4rem auto;  /* Gap between cards */
     display: flex;
     align-items: stretch;      /* Content matches image height */
@@ -77,6 +78,13 @@
         flex-direction: column;
         margin: 0 1rem 1.5rem 1rem;
         padding: 1.5rem;
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects-card-container:last-child {
+        border-bottom: none;
     }
 
     .project-card-content,

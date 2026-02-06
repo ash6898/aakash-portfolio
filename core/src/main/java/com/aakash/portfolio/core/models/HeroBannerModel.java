@@ -36,6 +36,9 @@ public class HeroBannerModel {
     private String button2Path;
 
     @ValueMapValue
+    private String button1Download;
+
+    @ValueMapValue
     private String imagePath;
 
     @ValueMapValue
@@ -68,6 +71,10 @@ public class HeroBannerModel {
 
     public String getButton2Path() {
         return button2Path;
+    }
+
+    public String getButton1Download() {
+        return button1Download;
     }
 
     public String getImagePath() {

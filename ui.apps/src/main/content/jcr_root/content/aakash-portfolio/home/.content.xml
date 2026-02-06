@@ -18,15 +18,15 @@
                 <item1
                     jcr:primaryType="nt:unstructured"
                     label="About"
-                    path="/content/aakash-portfolio/about.html"/>
+                    path="/content/aakash-portfolio/home.html#about"/>
                 <item2
                     jcr:primaryType="nt:unstructured"
                     label="Projects"
-                    path="/content/aakash-portfolio/projects.html"/>
+                    path="/content/aakash-portfolio/home.html#projects"/>
                 <item3
                     jcr:primaryType="nt:unstructured"
                     label="Contact"
-                    path="/content/aakash-portfolio/contact.html"/>
+                    path="/content/aakash-portfolio/home.html#contact"/>
             </navItems>
         </header>
 
@@ -35,12 +35,12 @@
             sling:resourceType="aakash-portfolio/components/hero-banner"
             jobTitle="AEM Developer"
             name="Hello,  my name &lt;br&gt; is Aakash Baskaran"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at qui eos culpa, quibusdam consequuntur sunt error explicabo voluptate laboriosam."
+            description="I'm an AEM Developer with a slightly unusual background—I've built enterprise content solutions for Fortune 500 clients, coded Android apps for 100,000+ users, and nerded out over data analytics, which means I approach digital experiences with clean architecture, performance optimization, and a healthy obsession with metrics."
             button1Text="Projects"
             button2Text="LinkedIn"
-            button1Path="/content/aakash-portfolio/projects.html"
+            button1Path="/content/aakash-portfolio/home.html#projects"
             button2Path="https://www.linkedin.com/in/aakashbaskaran/"
-            imagePath="/content/aakash-portfolio/assets/images/hero-banner-image.png"/>
+            imagePath="/content/aakash-portfolio/assets/images/Illustration.png"/>
 
                 <about-title
             jcr:primaryType="nt:unstructured"
@@ -50,11 +50,12 @@
         <about-banner
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aakash-portfolio/components/hero-banner"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at qui eos culpa, quibus
-            dam consequuntur sunt error explicabo voluptate laboriosam."
+            description="I'm someone who believes the best solutions come from diverse perspectives—which is why I've intentionally built expertise across enterprise content management, mobile development, and data analytics. I started as an AEM Developer at Accenture building solutions for Fortune 500 clients, then strengthened my component architecture skills developing Android apps for 100,000+ users at Zoho, before deepening my technical foundation with Canadian diplomas in Data Analytics and Big Data. Each experience wasn't a detour—it was deliberate: AEM taught me scalable architecture, mobile dev sharpened my design patterns, and analytics gave me the tools to measure and optimize impact.
+            &lt;br&gt;&lt;br&gt;Now I bring all three together, building AEM solutions that leverage mobile-grade component thinking and data-driven insights. Outside of work, I love strategic thinking (you'll find me playing chess), exploring great stories through movies, series, and anime, and planning to finally learn skating now that I'm in Canada. I'm based in Toronto, actively seeking AEM opportunities where curiosity and technical depth are valued. Let's connect and build something meaningful."
             styleClass="about-section"
             button1Text="Resume"
-            button1Path="/content/aakash-portfolio/resume.html"
+            button1Path="/content/aakash-portfolio/assets/documents/Aakash_Baskaran_Resume.pdf"
+            button1Download="Aakash_Baskaran_Resume.pdf"
             imagePath="/content/aakash-portfolio/assets/images/about_img.png"/>
 
         <projects-title

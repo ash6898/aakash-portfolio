@@ -24,7 +24,7 @@
 
 .project-card-content {
     flex: 1;               /* Takes remaining space after image */
-    padding: 4rem;
+    padding: 0 4rem 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,6 +90,10 @@
     .project-card-content,
     .project-card-image {
         width: 100%;
+    }
+
+    .project-card-content {
+        padding: 1rem 0;
     }
 
     .project-card-image {

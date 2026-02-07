@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 main {
     padding-top: 4rem;
 }
